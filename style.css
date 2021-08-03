@@ -144,9 +144,14 @@ nav{
     display: flex;
     justify-content: center;
 }
+.cover div{
+    width: 500px;
+    margin: 0 auto;
+}
 
 .cover img{
     height: 60vh;
+    margin: 0 auto;
     filter: drop-shadow(0px 5px 3px black);
     animation: drop 1.5s ease;
 }
@@ -215,9 +220,14 @@ nav{
     .cta{
         padding: 10px 0px 0px 0px;
     }
-    .cover img{
-        height: 40vh;
+    .cover div{
+        width: 300px;
     }
+
+    .cover img{
+        height: 37vh;
+    }
+
     .laptop-select{
         bottom: 0;
         right: 50%;
@@ -240,18 +250,25 @@ nav{
 
     nav{
         display: none;
+        width: 70%;
     }
 
     .active{
         display: block;
-        position: absolute;
+        position: fixed;
         top: 100px;
-        left: 25%;
+        left: 15%;
+        z-index: 1;
 
-        background: white;
-        border: solid 1px var(--light-gray);
+        background: rgba( 255, 255, 255, 1.00 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
         border-radius: 5px;
-        
+
+        animation: drop .5s ease-in-out;
     }
 
     .nav-links{
@@ -310,6 +327,10 @@ nav{
         margin: 30px 0px 0px 0px;
     }
 
+    .cover img{
+        height: 30vh;
+    }
+    
     .laptop-select{
         bottom: -5%;
     }

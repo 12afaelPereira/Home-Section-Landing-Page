@@ -13,3 +13,13 @@ linkMenu.forEach((link) => {
         nav.classList.remove('active');
     });
 });
+
+//slick carousel
+$(document).ready(function(){
+    $('.cover').slick({
+      arrows: false,
+      autoplay: true,
+      speed: 900,
+      cssEase: 'linear',
+    });
+  });
